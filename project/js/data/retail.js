@@ -1,0 +1,38 @@
+// Valid Race/Class Combinations for Retail:
+export const retailData = {
+    factions: ["Alliance", "Horde"],
+    genders: ["Male", "Female"],
+    Alliance: ["Human", "Dwarf", "Gnome", "Night_Elf", "Draenei", "Worgen", "Pandaren_A", "Void_Elf", "Lightforged_Draenei",
+        "Dark_Iron_Dwarf", "Kul_Tiran", "Mechagnome", "Dracthyr_A", "Earthen_A"],
+    Horde: ["Orc", "Troll", "Tauren", "Undead", "Blood_Elf", "Goblin", "Panderen_H", "Nightborne", "High_Mountain_Tauren", "Maghar_Orc",
+        "Zandalari_Troll", "Vulpera", "Dracthyr_H", "Earthen_H"],
+    validCombinations : {
+        Human: ["Warrior", "Mage", "Priest", "Warlock", "Rogue", "Monk", "Death_Knight"],
+        Dwarf: ["Warrior", "Hunter", "Paladin", "Priest", "Rogue", "Mage", "Shaman", "Warlock", "Monk", "Death_Knight"],
+        Gnome: ["Warrior", "Mage", "Warlock", "Rogue", "Hunter", "Priest", "Death_Knight", "Monk"],
+        Night_Elf: ["Warrior", "Druid", "Priest", "Hunter", "Rogue", "Mage", "Warlock", "Monk", "Death_Knight", "Demon_Hunter"],
+        Draenei: ["Warrior", "Priest", "Hunter", "Rogue", "Mage", "Warlock", "Paladin", "Shaman", "Monk", "Death_Knight"],
+        Orc: ["Warrior", "Hunter", "Shaman", "Warlock", "Rogue", "Mage", "Priest", "Monk", "Death_Knight"],
+        Troll: ["Warrior", "Mage", "Hunter", "Priest", "Shaman", "Rogue", "Warlock", "Druid", "Monk", "Death_Knight"],
+        Tauren: ["Warrior", "Hunter", "Druid", "Shaman", "Paladin", "Priest", "Warlock", "Rogue", "Mage", "Monk", "Death_Knight"],
+        Undead: ["Warrior", "Mage", "Priest", "Hunter", "Warlock", "Rogue", "Monk", "Death_Knight"],
+        Blood_Elf: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Paladin", "Demon_Hunter", "Monk", "Death_Knight"],
+        Goblin: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Shaman", "Monk", "Death_Knight"],
+        Panderen_A: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Shaman", "Monk", "Death_Knight"],
+        Panderen_H: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Shaman", "Monk", "Death_Knight"],
+        Dracthyr_A: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Evoker"],
+        Dracthyr_H: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Evoker"],
+        Void_Elf: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Death_Knight"],
+        Nightborne: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Death_Knight"],
+        Lightforged_Draenei: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Paladin", "Death_Knight"],
+        High_Mountain_Tauren: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Death_Knight", "Druid", "Shaman"],
+        Dark_Iron_Dwarf: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Shaman", "Paladin", "Monk", "Death_Knight"],
+        Maghar_Orc: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Shaman", "Death_Knight"], //Add '
+        Kul_Tiran: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Shaman", "Death_Knight", "Druid"],
+        Zandalari_Troll: ["Warrior", "Hunter", "Druid", "Shaman", "Paladin", "Priest", "Warlock", "Rogue", "Mage", "Monk", "Death_Knight"],
+        Mechagnome: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Death_Knight"],
+        Vulpera: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Shaman", "Death_Knight"],
+        Earthen_A: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Paladin", "Shaman"],
+        Earthen_H: ["Warrior", "Mage", "Hunter", "Priest", "Warlock", "Rogue", "Monk", "Paladin", "Shaman"],
+    }
+};
