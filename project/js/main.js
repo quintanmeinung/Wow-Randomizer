@@ -15,10 +15,13 @@ function formatRaceName(race) {
 // 3. Main Logic Functions
 // Randomizer Function for all Combination Results
 function randomizeHero() {
-    const faction = getRandomElement(currentExpansion.factions);
-    const gender = getRandomElement(currentExpansion.genders);
-    const race = getRandomElement(Object.keys(currentExpansion.validCombinations));
-    const heroClass = getRandomElement(currentExpansion.validCombinations[race]);
+    const faction = currentExpansion.factions[Math.floor(Math.random() * currentExpansion.factions.length)];
+    const genders = currentExpansion.genders;
+    const gender = genders[Math.floor(Math.random() * genders.length)];
+    const factionRaces = currentExpansion.validCombinations[faction]; // Get races for the faction
+    const races = Object.keys(factionRaces);
+    const race = races[Math.floor(Math.random() * races.length)];
+    const heroClass = factionRaces[race][Math.floor(Math.random() * factionRaces[race].length)];
     return { faction, gender, race, heroClass };
 }
 
