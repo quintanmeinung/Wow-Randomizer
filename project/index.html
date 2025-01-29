@@ -8,16 +8,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WoW Hero Randomizer</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>World of Warcraft Hero Randomizer</h1>
     <label for="expansion-select">Choose Expansion:</label>
-    <select id="expansion-select">
-        <option value="Classic">Classic</option>
-        <option value="Retail">Retail</option>
-    </select>
-    <p id="expansion">Current Expansion: Classic</p>
+    <div id="expansion-container">
+        <h2 id="expansion">Current Expansion: Classic</h2>
+        <button id="classic-btn">Classic</button>
+        <button id="cataclysm-btn">Cataclysm</button>
+        <button id="retail-btn">Retail</button>
+    </div>
 
     <button id="randomize-btn">Randomize Hero</button>
 
