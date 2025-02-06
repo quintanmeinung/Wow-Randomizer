@@ -11,22 +11,30 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>World of Warcraft Hero Randomizer</h1>
-    <label for="expansion-select">Choose Expansion:</label>
-    <div id="expansion-container">
-        <h2 id="expansion">Current Expansion: Classic</h2>
-        <button id="classic-btn">Classic</button>
-        <button id="cataclysm-btn">Cataclysm</button>
-        <button id="retail-btn">Retail</button>
-    </div>
+    <!-- Main Container -->
+    <div class="container">
+        <h1>World of Warcraft Hero Randomizer</h1>
 
-    <button id="randomize-btn">Randomize Hero</button>
+        <!-- Expansion Selection -->
+        <div id="expansion-container">
+            <h2 id="expansion">Current Expansion: Classic</h2>
+            <div class="button-group">
+                <button id="classic-btn">Classic</button>
+                <button id="cataclysm-btn">Cataclysm</button>
+                <button id="retail-btn">The War Within</button>
+            </div>
+        </div>
 
-    <div id="hero-details">
-        <div>Faction: <span id="faction"></span></div>
-        <div>Gender: <span id="gender"></span></div>
-        <div>Race: <span id="race"></span></div>
-        <div>Class: <span id="class"></span></div>
+        <!-- Randomization Button -->
+        <button id="randomize-btn">Randomize Hero</button>
+
+        <!-- Hero Details Output -->
+        <div id="hero-display">
+            <div><strong>Faction:</strong> <span id="faction"></span></div>
+            <div><strong>Gender:</strong> <span id="gender"></span></div>
+            <div><strong>Race:</strong> <span id="race"></span></div>
+            <div><strong>Class:</strong> <span id="class"></span></div>
+        </div>
     </div>
 
     <script type="module" src="js/main.js"></script>
