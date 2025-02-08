@@ -25,11 +25,11 @@ function updateExpansion(expansion) {
 
 // 2. Helper Functions to Replace "_" with a space for better format
 function formatRaceName(race, heroClass) {
-    return race.replace("_", " ");
+    return race.replaceAll("_", " ");
 }
 
 function formatClassName(heroClass) {
-    return heroClass.replace("_", " ");
+    return heroClass.replaceAll("_", " ");
 }
 
 // 3. Main Logic Functions
